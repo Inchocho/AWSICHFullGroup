@@ -26,7 +26,7 @@ public class ArrayGuGuDan {
 		
 		int [][] guguDan2 = new int[9][9];
 		
-		for(int i = 0; i < guguDan2[0].length; i++) {
+		for(int i = 0; i < guguDan2[0].length-1; i++) {
 			for(int j = 0; j < guguDan2.length; j++) {
 				guguDan[i][j] = (i+2)*(j+1);
 				System.out.print((i+2) + " * " + (j+1) 
