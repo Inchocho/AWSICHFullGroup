@@ -2,10 +2,11 @@ package one;
 
 public class ObjectEx1 {
 	public int add(int x, int y) {
-		return x + y;		
+		return x + y;
 	}
+
 	public int mul(int x, int y) {
-		return x*y;
+		return x * y;
 	}
 
 	public static void main(String[] args) {
@@ -51,8 +52,44 @@ public class ObjectEx1 {
 //		수학공식, 프로그램 에러와 같은 논리나 개념
 
 //		-클래스는 객체의 설계도 또는 틀 이라고 정의 할 수 있다
+//		objectEx1 (ctrl + shift + r : 파일찾기 ex: object입력시 
+//		작업중인 파일,프로젝트등 검색
 
-//		객체지향 인스턴스(객체) + 메소드사용		
+//		객체지향 인스턴스(객체) + 메소드사용	
+
+//		클래스↓		객체↓
+
+//		제품설계도		제품
+//		Tv설계도		Tv
+//		붕어빵 틀		붕어빵
+
+//		객체는 참조변수를 통해서만 다룰 수 있으며,
+//		Car car = new Car();
+//		car.speedUp();	   <-- 참조변수car.를 통해서 인스턴스의 변수나 메소드를 실행,변경,작업
+//		car.name = "소나타"; <-- 참조변수car.를 통해서 인스턴스의 변수나 메소드를 실행,변경,작업 
+//		참조변수의 타입은 인스턴스의 타입과 일치해야한다
+
+//		!클래스의 또 다른 정의
+//		클래스
+//		: 데이터와 함수의 결합
+//		
+//		변수 -> 배열 -> 구조체 -> 클래스
+//		
+//		변수
+//		:하나의 데이터를 저장 할 수 있는 공간
+//		배열
+//		:같은 종류의 여러 데이터를 하나의 집합으로 저장 할 수 있는 공간
+//		구조체
+//		:서로 연관된 여러 데이터를 종류에 관계없이 하나의
+//		집합으로 저장 할 수 있는 공간
+//		클래스
+//		:데이터와 함수의 결합(구조체 + 함수)
+
+//		데이터 처리를 위한 데이터 저장형태
+
+//		클래스
+//		:사용자 정의 타입(user-defined type)
+
 		ObjectEx1 sum = new ObjectEx1();
 		sum.add(2, 3);
 		System.out.println(sum.add(2, 3));
