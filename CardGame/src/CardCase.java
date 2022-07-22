@@ -49,4 +49,16 @@ public class CardCase {
 		}
 	}
 
+	void showAll2() {
+		for (int i = 0; i < cardArr.length; i++) {
+			Card card = null;
+			if (i % 13 == 0) {
+				System.out.println();
+			}
+			card = cardArr[i];
+			System.out.print(card.getCard());
+
+		}
+	}
+
 }

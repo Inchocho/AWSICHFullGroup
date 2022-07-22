@@ -11,17 +11,26 @@ public class CardCaseTest {
 		card = cardCase.pick(0);
 		System.out.println(card.getCard());
 
-//		cardCase.shuffle();
+//		카드를 섞음
+		cardCase.shuffle();
 		card = cardCase.pick(0);
 		System.out.println(card.getCard());
 
+
 		for (int i = 0; i < cardCase.cardArr.length; i++) {
+			if(i%13 == 0) {
+				System.out.println();
+			}
 			card = cardCase.pick(i);
 			System.out.print(card.getCard());
 		}
 		System.out.println();
 		
+//		카드를 순서대로 나열함
 		cardCase.showAll();
+		System.out.println();
+		System.out.println("포함관계를 확인하자");
+		cardCase.showAll2();
 
 	}
 }
