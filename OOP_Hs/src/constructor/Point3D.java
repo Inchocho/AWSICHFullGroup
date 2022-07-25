@@ -1,4 +1,4 @@
-package Constructor;
+package constructor;
 
 public class Point3D extends Point {
 	int x = 1;
