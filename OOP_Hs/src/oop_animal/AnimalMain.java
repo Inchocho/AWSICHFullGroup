@@ -10,6 +10,7 @@ public class AnimalMain {
 		Dog dog2 = new Dog();
 		Tiger tiger = new Tiger();
 		Lion lion = new Lion();
+		Crocodile cro = new Crocodile();
 		dog.setName("바둑이");
 
 //		동물은 개다(X)
@@ -22,8 +23,34 @@ public class AnimalMain {
 		lion.getFood();
 
 		Bouncer bouncer = new Bouncer();
-		bouncer.barkAnimal(tiger);	// 어흥
-		bouncer.barkAnimal(lion);	// 으르렁
+		bouncer.barkAnimal(cro);
+		bouncer.barkAnimal(tiger);
+		bouncer.barkAnimal(dog2);
+		bouncer.barkAnimal(lion);
+		
+		cro.bark();
+		dog2.bark();
+		
+		Tiger tiger2 = new Tiger();  // Tiger is a Tiger
+		Animal animalT = new Tiger();  // Tiger is a Animal
+		Predator predatorT = new Tiger();  // Tiger is a Predator
+		Barkable barkableT = new Tiger();  // Tiger is a Barkable
+		
+//		predator 객체와 Barkable 로 선언된 barkable 객체는 
+//		사용할 수 있는 메소드가 서로 다르다는 점이다. 
+//		predator 객체는 getFood() 메소드가 선언된 Predator 인터페이스의 
+//		객체이므로 getFood 메소드만 호출이 가능하다. 
+//		Barkable 로 선언된 barkable 객체는 
+//		bark 메소드만 호출이 가능하다		
+		
+		tiger2.bark();		
+		animalT.setName("고양이");
+		System.out.println(animalT.name);
+		predatorT.getFood();
+		barkableT.bark();
+		
+		Dog2 dooog = new Dog2();
+		dooog.printFood();
 
 	}
 

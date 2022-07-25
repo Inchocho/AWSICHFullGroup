@@ -22,17 +22,7 @@ public class Bouncer {
 //	Animal tiger = new Tiger();  // Tiger is a Animal
 //	Animal lion = new Lion();  // Lion is a Animal
 	
-    void barkAnimal(Animal animal) {
-        if (animal instanceof Tiger) {
-//        	animal 객체는 Tiger 클래스로 만들어진 객체면 조건 true
-            System.out.println("어흥");
-        } else if (animal instanceof Lion) {
-//        	animal 객체는 Lion 클래스로 만들어진 객체면 조건 true
-            System.out.println("으르렁");
-        } else if (animal instanceof Crocodile) {
-//        	클래스 추가시 계속 else if~ 추가해야됨 복잡함
-//        	해결법 - 인터페이스: Barkable 생성
-        	System.out.println("악어는 어케움?");
-        }
+    void barkAnimal(Barkable animal) {
+    	animal.bark();
     }
 }

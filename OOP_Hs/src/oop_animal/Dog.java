@@ -1,6 +1,6 @@
 package oop_animal;
 
-public class Dog extends Animal implements Predator {
+public class Dog extends Animal implements BarkablePredator {
 
 	String dogType = "믹스견";
 
@@ -53,7 +53,18 @@ public class Dog extends Animal implements Predator {
 		System.out.println(name +"는 개 입니다."+ "zzz");
 	}
 	
+//	인터페이스에서 정의한 메소드를 구현할때는 반드시
+//	접근제어자 public를 사용해야 한다.
+//	인터페이스를 구현하는 구현클래스에서 구현이 필연적이기 때문에 
+//	접근이 용이하도록 public 접근제어자를 무조건 기본
+//	반드시 implements한 인터페이스의 모든 메소드를 구현해야함
+	@Override
 	public void getFood() {
 		System.out.println("강아지고기");
+	}
+	
+	@Override
+	public void bark() {
+		System.out.println("강아지는 크르르르르릉");
 	}
 }
