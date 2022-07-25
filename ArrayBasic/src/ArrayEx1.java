@@ -33,6 +33,7 @@ public class ArrayEx1 {
 		System.out.println(numArr[3]);
 		System.out.println(numArr[4]);
 		System.out.println(numArr[0] + numArr[1]);
+		System.out.println(numArr[1] + numArr[2]);
 		
 		System.out.println("배열길이: " + numArr.length);		
 		
