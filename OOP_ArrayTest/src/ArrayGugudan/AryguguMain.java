@@ -11,7 +11,7 @@ public class AryguguMain {
 		inputNum = scan.nextInt();
 
 		Arygugu gu = new Arygugu();
-//		gu.gugu(inputNum);
+//		gu.gugu0(inputNum);
 		
 		gu.gugu2(inputNum);
 

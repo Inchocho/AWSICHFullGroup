@@ -1,4 +1,4 @@
-package OOP_Basic;
+package oop_basic;
 
 public class Counter {
 	

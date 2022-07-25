@@ -1,6 +1,6 @@
-package OOP_Animal;
+package oop_animal;
 
-public class Dog extends Animal {
+public class Dog extends Animal implements Predator {
 
 	String dogType = "믹스견";
 
@@ -51,5 +51,9 @@ public class Dog extends Animal {
 //	메소드 오버라이딩
 	void Sleep() {
 		System.out.println(name +"는 개 입니다."+ "zzz");
+	}
+	
+	public void getFood() {
+		System.out.println("강아지고기");
 	}
 }
