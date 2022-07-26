@@ -17,16 +17,18 @@ public class HumanTest {
 		int age = 0;
 		String sex = "";
 		String hairColor = "";
-		
+
 		name = h.getName();
 		age = h.getAge();
 		sex = h.getSex();
 		hairColor = h.getHairColor();
-		
+
 		System.out.println(name);
 		System.out.println(age);
 		System.out.println(sex);
 		System.out.println(hairColor);
+
+		System.out.println(h);
 
 	}
 }
