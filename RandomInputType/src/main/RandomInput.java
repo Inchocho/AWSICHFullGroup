@@ -21,7 +21,7 @@ public class RandomInput {
 			} else if (arr[i] >= 'A' && arr[i] <= 'Z') {
 				System.out.println("원본: " + arr[i] + "소문자화: " + (char) (arr[i] + 32));
 			} else {
-				System.out.println("영문자를 입력해주세요.");
+				System.out.println("영문자를 입력해주세요." + arr[i]);
 			}
 
 		}
