@@ -10,9 +10,9 @@ public class Card {
 	Card() {
 		init();
 	}
-	
+
 	Card(int shapeIndex, int numberIndex) {
-		init(shapeIndex,numberIndex);
+		init(shapeIndex, numberIndex);
 	}
 
 //	Card(int shapeIndex, int numberIndex) {
