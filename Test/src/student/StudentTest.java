@@ -25,7 +25,7 @@ public class StudentTest {
 		std2.info();
 		System.out.println("총점:" + sumResult);
 		System.out.println("평균:" + avgResult);
-
+		
 	}
 
 }
