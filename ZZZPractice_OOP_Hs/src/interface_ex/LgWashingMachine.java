@@ -48,4 +48,10 @@ public class LgWashingMachine implements WashingMachine, dryCouse {
 		System.out.println("건조 시작합니다.");
 	}
 
+	@Override
+	public void checkPrice(int price) {
+		System.out.println("가격: " + price +"원");
+		
+	}
+
 }

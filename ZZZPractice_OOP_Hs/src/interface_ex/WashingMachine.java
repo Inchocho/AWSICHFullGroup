@@ -10,6 +10,8 @@ public interface WashingMachine {
 	public void pauseButton();
 
 	public void stopButton();
+	
+	public void checkPrice(int price);
 
 	public int changeSpeed(int speed);
 }

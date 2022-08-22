@@ -7,6 +7,7 @@ public class WashingMachineTest {
 		lg.startButton();
 		System.out.println("세탁기의 속도는 " 
 				+ lg.changeSpeed(3));
+		lg.checkPrice(5000000);
 		lg.dry();		
 	}
 }
